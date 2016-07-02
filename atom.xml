@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hiby</title>
+  <subtitle>Hi，花花世界</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://hiby.xyz/"/>
+  <updated>2016-06-28T15:17:45.000Z</updated>
+  <id>http://hiby.xyz/</id>
+  
+  <author>
+    <name>hiby</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello, blog!</title>
+    <link href="http://hiby.xyz/2016/06/25/hello-blog/"/>
+    <id>http://hiby.xyz/2016/06/25/hello-blog/</id>
+    <published>2016-06-25T06:24:00.000Z</published>
+    <updated>2016-06-28T15:17:45.000Z</updated>
+    
+    <content type="html">&lt;p&gt;域名买回来快一年了，自从上次捣鼓blog到现在半年有余，早上一时心血来潮，一口气把这东西整好了。感谢开源主题的同学，我很喜欢Material风格，等有空了自己也贡献一些主题。&lt;/p&gt;
+&lt;p&gt;大致记录一下建站过程，安装过程、生成blog之类的就不赘述，官网文档灰常清楚，说一些遇到的问题。&lt;/p&gt;
+&lt;h2 id=&quot;Wordpress-or-Hexo？&quot;&gt;&lt;a href=&quot;#Wordpress-or-Hexo？&quot; class=&quot;headerlink&quot; title=&quot;Wordpress or Hexo？&quot;&gt;&lt;/a&gt;Wordpress or Hexo？&lt;/h2&gt;&lt;p&gt;最早试用了wordpress，发现不好玩，配置太麻烦，偶然间发现hexo，扫了下文档：nodejs驱动，安装、配置、部署简单，然后去尼玛的wordpress。&lt;/p&gt;
+&lt;h2 id=&quot;版本管理&quot;&gt;&lt;a href=&quot;#版本管理&quot; class=&quot;headerlink&quot; title=&quot;版本管理&quot;&gt;&lt;/a&gt;版本管理&lt;/h2&gt;&lt;p&gt;官方推荐的安转主题的方法：&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git &lt;span class=&quot;built_in&quot;&gt;clone&lt;/span&gt; [主题git仓库] themes/xxx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后问题就来了，用git做版本管理，发现主题目录无法&lt;code&gt;stage&lt;/code&gt;，当然也就没办法提交了。&lt;/p&gt;
+&lt;h3 id=&quot;原因和解决方法&quot;&gt;&lt;a href=&quot;#原因和解决方法&quot; class=&quot;headerlink&quot; title=&quot;原因和解决方法&quot;&gt;&lt;/a&gt;原因和解决方法&lt;/h3&gt;&lt;p&gt;&lt;code&gt;git clone&lt;/code&gt;下来的目录中有&lt;strong&gt;.git&lt;/strong&gt;目录，git认为&lt;strong&gt;xxx&lt;/strong&gt;目录为子模块&lt;code&gt;submodule&lt;/code&gt;，子模块需要使用&lt;code&gt;git submodule&lt;/code&gt;命令操作。对于git不是很熟悉的同学，比如在下，这简直噩梦。时间紧迫，直接跑一下以下命令，然后就可以继续愉快地使用&lt;code&gt;git add/commit&lt;/code&gt;了。&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;rm -rf themes/xxx/.git&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;使用评论插件&quot;&gt;&lt;a href=&quot;#使用评论插件&quot; class=&quot;headerlink&quot; title=&quot;使用评论插件&quot;&gt;&lt;/a&gt;使用评论插件&lt;/h2&gt;&lt;p&gt;我使用的主题集成&lt;a href=&quot;http://duoshuo.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;多说&lt;/a&gt;，按照主题文档指导，要启用的话需要一个&lt;strong&gt;&lt;em&gt;shortname&lt;/em&gt;。妈蛋翻遍多说官网，没找到哪里有&lt;/strong&gt;shortname**。Google了一下，看到一些问答，说是先建站，然后有个二级域名，二级域名第一个单词啥的。但死活没人给出建站地址，尼玛官网上居然也找不到。不知道翻了多少问答，终于在一个问答的回复的链接中找到了建站链接，真尼玛坑啊。对，就下面这东西，就是它！！！&lt;/p&gt;
+&lt;p style=&quot;font-size: 36px;text-align:center&quot;&gt;多说建站链接：&lt;a href=&quot;http://duoshuo.com/create-site/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://duoshuo.com/create-site/&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;域名买回来快一年了，自从上次捣鼓blog到现在半年有余，早上一时心血来潮，一口气把这东西整好了。感谢开源主题的同学，我很喜欢Material风格，等有空了自己也贡献一些主题。&lt;/p&gt;
+&lt;p&gt;大致记录一下建站过程，安装过程、生成blog之类的就不赘述，官网文档灰常清楚，说一些
+    
+    </summary>
+    
+      <category term="shit" scheme="http://hiby.xyz/categories/shit/"/>
+    
+    
+      <category term="hexo" scheme="http://hiby.xyz/tags/hexo/"/>
+    
+      <category term="多说" scheme="http://hiby.xyz/tags/%E5%A4%9A%E8%AF%B4/"/>
+    
+  </entry>
+  
+</feed>
