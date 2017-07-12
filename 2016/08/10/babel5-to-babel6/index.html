@@ -7,7 +7,7 @@
 
     
 
-    <title>归档 | Hi，花花世界</title>
+    <title>babel5-to-babel6 | Hi，花花世界</title>
     <meta name="author" content="hiby">
     
     <meta name="description" content="负能量爆表">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="babel5-to-babel6"/>
     <meta property="og:site_name" content="Hiby"/>
 
     
@@ -177,69 +177,123 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper cyan">
-        <span class="breadcrumb">当前位置（归档）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/开发/">开发</a>
+
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>babel5-to-babel6</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
+            </div>
+            <time class="cyan-link-context" datetime="2016-08-09T16:00:00.000Z"><a href="/2016/08/10/babel5-to-babel6/">2016-08-10</a></time>
+
+            
+    <div class="tags-row">
         
+            <a href="/tags/es6/" class="chip cyan lighten-1">es6</a>
         
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2016
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2016/08/10/babel5-to-babel6/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-08-09T16:00:00.000Z">2016-08-10</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                babel5-to-babel6
-                            </a>
-                        
-                            <a href="/2016/07/06/文本编辑器/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-07-06T14:48:55.000Z">2016-07-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                文本编辑器
-                            </a>
-                        
-                            <a href="/2016/06/25/hello-blog/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2016-06-25T06:24:00.000Z">2016-06-25</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                Hello, blog!
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
+            <a href="/tags/babel6/" class="chip cyan lighten-1">babel6</a>
         
-            <li>
-                <div class="collapsible-header ">
-                    <i class="fa fa-archive"></i>2014
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2014/11/24/mock-investigate/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2014-11-23T16:00:00.000Z">2014-11-24</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                前端Mock工具调研
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
+            <a href="/tags/javascript/" class="chip cyan lighten-1">javascript</a>
         
-    </ul>
+            <a href="/tags/构建/" class="chip cyan lighten-1">构建</a>
+        
+    </div>
+
+
+            <div class="toc cyan-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#为什么要升级？"><span class="section table-of-contents-text">为什么要升级？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#重大变化"><span class="section table-of-contents-text">重大变化</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#升级过程中遇到问题"><span class="section table-of-contents-text">升级过程中遇到问题</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#babel官方未提供decorator-transfrom插件"><span class="section table-of-contents-text">babel官方未提供decorator transfrom插件</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#babel提供的es2015插件集默认包含transform-es2015-modules-commonjs插件"><span class="section table-of-contents-text">babel提供的es2015插件集默认包含transform-es2015-modules-commonjs插件</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#babel提供的AMD模块转码插件默认开启strict-mode"><span class="section table-of-contents-text">babel提供的AMD模块转码插件默认开启strict mode</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#es6代码中有require时会导致转码失败"><span class="section table-of-contents-text">es6代码中有require时会导致转码失败</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#使用babel-core提供的api转码时，如果以对象形式传入配置，转码后AMD模块会有两层define"><span class="section table-of-contents-text">使用babel-core提供的api转码时，如果以对象形式传入配置，转码后AMD模块会有两层define</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#ES6-module-to-AMD的转码逻辑变更"><span class="section table-of-contents-text">ES6 module to AMD的转码逻辑变更</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#polyfill和babel-external-helper"><span class="section table-of-contents-text">polyfill和babel-external-helper</span></a></li></ol></li></ol>
+</div>
+
+
+            <div class="entry cyan-link-context">
+                <h2 id="为什么要升级？"><a href="#为什么要升级？" class="headerlink" title="为什么要升级？"></a>为什么要升级？</h2><ul>
+<li>性能提升：据说compile速度提升20%（但测试后发现，速度慢了20%+）。</li>
+<li>可配置的插件：更强的灵活性，以及更简单的插件API。</li>
+<li>更简洁的配置。</li>
+</ul>
+<h2 id="重大变化"><a href="#重大变化" class="headerlink" title="重大变化"></a>重大变化</h2><ul>
+<li>不再提供babel包<ul>
+<li>命令行工具由babel-cli包提供</li>
+<li>node api由babel-core提供</li>
+<li>polyfill由babel-polyfill提供</li>
+</ul>
+</li>
+<li>.babelrc配置变化<ul>
+<li>移除“blacklist”、“whitelist”、“optional”、“nonStandard”和“modules”等</li>
+<li>增加<code>plugins</code>：转码逻辑通过一系列插件实现，默认不使用任何插件</li>
+<li>增加<code>presets</code>配置，提供一些预设的插件集合</li>
+<li>external-helper选项由插件实现</li>
+</ul>
+</li>
+</ul>
+<h2 id="升级过程中遇到问题"><a href="#升级过程中遇到问题" class="headerlink" title="升级过程中遇到问题"></a>升级过程中遇到问题</h2><h3 id="babel官方未提供decorator-transfrom插件"><a href="#babel官方未提供decorator-transfrom插件" class="headerlink" title="babel官方未提供decorator transfrom插件"></a>babel官方未提供decorator transfrom插件</h3><p>可以使用非官方插件：transform-decorators-legacy。</p>
+<h3 id="babel提供的es2015插件集默认包含transform-es2015-modules-commonjs插件"><a href="#babel提供的es2015插件集默认包含transform-es2015-modules-commonjs插件" class="headerlink" title="babel提供的es2015插件集默认包含transform-es2015-modules-commonjs插件"></a>babel提供的es2015插件集默认包含transform-es2015-modules-commonjs插件</h3><p>SSP系统需要将es6模块转成AMD模块，需要在plugins中指定使用transform-es2015-modules-amd.</p>
+<h3 id="babel提供的AMD模块转码插件默认开启strict-mode"><a href="#babel提供的AMD模块转码插件默认开启strict-mode" class="headerlink" title="babel提供的AMD模块转码插件默认开启strict mode"></a>babel提供的AMD模块转码插件默认开启strict mode</h3><p>关闭strict mode的方法：</p>
+<ul>
+<li>不使用<code>preset-es2015</code>，需要<strong>自定义preset</strong>或者在<strong>plugins</strong>中引入所有需要的插件;</li>
+<li>插件中做如下配置：</li>
+</ul>
+<figure class="highlight javascript"><figcaption><span>&#123; .theme-peacock &#125;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"plugins"</span>: [</div><div class="line">		[<span class="string">"transform-es2015-modules-amd"</span>, &#123;<span class="string">"strict"</span>: <span class="literal">false</span>&#125;]</div><div class="line">	]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+ <font color="red">Notes：如果不提供es2015相关插件的preset，<code>preset-stage-x</code>也不能使用</font>
+
+<h3 id="es6代码中有require时会导致转码失败"><a href="#es6代码中有require时会导致转码失败" class="headerlink" title="es6代码中有require时会导致转码失败"></a>es6代码中有require时会导致转码失败</h3><p>es6代码中出现<code>require</code>时，babel5能正确转码，但babel6会报如下错误：</p>
+<pre><code>Property object of MemberExpression expected node to be of a type [&quot;Expression&quot;] but instead got null.
+</code></pre><p>解决方法：使用<code>import</code>。</p>
+<h3 id="使用babel-core提供的api转码时，如果以对象形式传入配置，转码后AMD模块会有两层define"><a href="#使用babel-core提供的api转码时，如果以对象形式传入配置，转码后AMD模块会有两层define" class="headerlink" title="使用babel-core提供的api转码时，如果以对象形式传入配置，转码后AMD模块会有两层define"></a>使用babel-core提供的api转码时，如果以对象形式传入配置，转码后AMD模块会有两层<code>define</code></h3><p>解决方法：传入配置中需要增加<code>babelrc=false</code>。<br>可能的原因：babel初始化配置时，如果传入配置中无<code>babelrc=false</code>，会从项目目录中找<strong>.babelrc</strong>文件，然后将传入配置与<strong>.babelrc</strong>配置合并，最终对代码进行两次AMD transfrom。</p>
+<h3 id="ES6-module-to-AMD的转码逻辑变更"><a href="#ES6-module-to-AMD的转码逻辑变更" class="headerlink" title="ES6 module to AMD的转码逻辑变更"></a>ES6 module to AMD的转码逻辑变更</h3><p>babel6提供的AMD转码插件对<code>export default</code>的转码逻辑做了修改，详情如下：<br>针对如下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">export default &#123;</div><div class="line">    foo: 1</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<p>使用babel5转码后：<br><figure class="highlight javascript"><figcaption><span>&#123; .theme-peacock &#125;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">define([<span class="string">"exports"</span>, <span class="string">"module"</span>], <span class="function"><span class="keyword">function</span> (<span class="params">exports, module</span>) </span>&#123;</div><div class="line">    <span class="built_in">module</span>.exports = &#123;</div><div class="line">        <span class="attr">foo</span>: <span class="number">1</span></div><div class="line">    &#125;;;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>使用babel6转码后：<br><figure class="highlight javascript"><figcaption><span>&#123; .theme-peacock &#125;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">define([<span class="string">"exports"</span>], <span class="function"><span class="keyword">function</span> (<span class="params">exports</span>) </span>&#123;</div><div class="line">    <span class="built_in">Object</span>.defineProperty(exports, <span class="string">"__esModule"</span>, &#123;</div><div class="line">        <span class="attr">value</span>: <span class="literal">true</span></div><div class="line">    &#125;);</div><div class="line">    exports.default = &#123;</div><div class="line">        <span class="attr">foo</span>: <span class="number">1</span></div><div class="line">    &#125;;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+<p>在AMD模块依赖es6模块的场景下，AMD模块代码会不能运行。</p>
+<p>解决方法：<br>方法1. 项目代码全部使用es6;<br>方法2. 修改AMD模块中使用es6模块的方式;<br>方法3. 定义一个模块转码插件，实现babel5的转码逻辑（不是个好办法）。</p>
+<figure class="highlight javascript"><figcaption><span>&#123; .theme-peacock &#125;</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// foo.js</span></div><div class="line"><span class="keyword">const</span> foo = &#123;<span class="attr">baz</span>: <span class="number">42</span>, <span class="attr">bar</span>: <span class="literal">false</span>&#125;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> foo</div><div class="line"><span class="comment">// bar.js</span></div><div class="line"><span class="keyword">import</span> &#123;baz&#125; <span class="keyword">from</span> <span class="string">'./foo'</span></div></pre></td></tr></table></figure>
+<h3 id="polyfill和babel-external-helper"><a href="#polyfill和babel-external-helper" class="headerlink" title="polyfill和babel-external-helper"></a>polyfill和babel-external-helper</h3><p>在babel-polyfill包中。<br>babel-cli提供babel-external-helpers命令，生成helpers代码。</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!--PC版-->
+                <div id="SOHUCS" sid="2016/08/10/babel5-to-babel6/"></div>
+                <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+                <script type="text/javascript">
+                window.changyan.api.config({
+                appid: 'cysJNWvbu',
+                conf: 'prod_bc57cc28d4c38cfffbe628c24ee89333'
+                });
+                </script>
+            </div>
+        </div>
+    </section>
+
 
 
 </div>
