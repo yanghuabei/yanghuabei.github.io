@@ -7,7 +7,7 @@
 
     
 
-    <title>Hello, blog! | Hi，花花世界</title>
+    <title>前端Mock工具调研 | Hi，花花世界</title>
     <meta name="author" content="hiby">
     
     <meta name="description" content="负能量爆表">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="Hello, blog!"/>
+    <meta property="og:title" content="前端Mock工具调研"/>
     <meta property="og:site_name" content="Hiby"/>
 
     
@@ -184,7 +184,7 @@
             
     
     
-    <a class="breadcrumb" href="/categories/shit/">shit</a>
+    <a class="breadcrumb" href="/categories/开发/">开发</a>
 
 
         
@@ -201,39 +201,250 @@
             <div class="article-title">
                 
     
-        <h1>Hello, blog!</h1>
+        <h1>前端Mock工具调研</h1>
     
 
 
             </div>
-            <time class="cyan-link-context" datetime="2016-06-25T06:24:00.000Z"><a href="/2016/06/25/hello-blog/">2016-06-25</a></time>
+            <time class="cyan-link-context" datetime="2014-11-23T16:00:00.000Z"><a href="/2014/11/24/mock-investigate/">2014-11-24</a></time>
 
             
     <div class="tags-row">
         
-            <a href="/tags/hexo/" class="chip cyan lighten-1">hexo</a>
+            <a href="/tags/前端/" class="chip cyan lighten-1">前端</a>
         
-            <a href="/tags/多说/" class="chip cyan lighten-1">多说</a>
+            <a href="/tags/mock/" class="chip cyan lighten-1">mock</a>
+        
+            <a href="/tags/前后端同步开发/" class="chip cyan lighten-1">前后端同步开发</a>
+        
+            <a href="/tags/接口模拟/" class="chip cyan lighten-1">接口模拟</a>
         
     </div>
 
 
             <div class="toc cyan-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#Wordpress-or-Hexo？"><span class="section table-of-contents-text">Wordpress or Hexo？</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#版本管理"><span class="section table-of-contents-text">版本管理</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#原因和解决方法"><span class="section table-of-contents-text">原因和解决方法</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#使用评论插件"><span class="section table-of-contents-text">使用评论插件</span></a></li></ol>
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#现有的解决方案"><span class="section table-of-contents-text">现有的解决方案</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Jquery-mockjax"><span class="section table-of-contents-text">Jquery-mockjax</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#功能"><span class="section table-of-contents-text">功能</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#优点"><span class="section table-of-contents-text">优点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#缺点"><span class="section table-of-contents-text">缺点</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Pretender"><span class="section table-of-contents-text">Pretender</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#功能-1"><span class="section table-of-contents-text">功能</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#优点-1"><span class="section table-of-contents-text">优点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#缺点-1"><span class="section table-of-contents-text">缺点</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Mockjs"><span class="section table-of-contents-text">Mockjs</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#功能-2"><span class="section table-of-contents-text">功能</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#优点-2"><span class="section table-of-contents-text">优点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#缺点-2"><span class="section table-of-contents-text">缺点</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#APItizer"><span class="section table-of-contents-text">APItizer</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#功能-3"><span class="section table-of-contents-text">功能</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#优点-3"><span class="section table-of-contents-text">优点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#缺点-3"><span class="section table-of-contents-text">缺点</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#RAP"><span class="section table-of-contents-text">RAP</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#功能-4"><span class="section table-of-contents-text">功能</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#优点-4"><span class="section table-of-contents-text">优点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#缺点-4"><span class="section table-of-contents-text">缺点</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Mocky"><span class="section table-of-contents-text">Mocky</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Mockable"><span class="section table-of-contents-text">Mockable</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#理想中的mock平台"><span class="section table-of-contents-text">理想中的mock平台</span></a></li></ol>
 </div>
 
 
             <div class="entry cyan-link-context">
-                <p>域名买回来快一年了，自从上次捣鼓blog到现在半年有余，早上一时心血来潮，一口气把这东西整好了。感谢开源主题的同学，我很喜欢Material风格，等有空了自己也贡献一些主题。</p>
-<p>大致记录一下建站过程，安装过程、生成blog之类的就不赘述，官网文档灰常清楚，说一些遇到的问题。</p>
-<h2 id="Wordpress-or-Hexo？"><a href="#Wordpress-or-Hexo？" class="headerlink" title="Wordpress or Hexo？"></a>Wordpress or Hexo？</h2><p>最早试用了wordpress，发现不好玩，配置太麻烦，偶然间发现hexo，扫了下文档：nodejs驱动，安装、配置、部署简单，然后去尼玛的wordpress。</p>
-<h2 id="版本管理"><a href="#版本管理" class="headerlink" title="版本管理"></a>版本管理</h2><p>官方推荐的安转主题的方法：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> [主题git仓库] themes/xxx</div></pre></td></tr></table></figure></p>
-<p>然后问题就来了，用git做版本管理，发现主题目录无法<code>stage</code>，当然也就没办法提交了。</p>
-<h3 id="原因和解决方法"><a href="#原因和解决方法" class="headerlink" title="原因和解决方法"></a>原因和解决方法</h3><p><code>git clone</code>下来的目录中有<strong>.git</strong>目录，git认为<strong>xxx</strong>目录为子模块<code>submodule</code>，子模块需要使用<code>git submodule</code>命令操作。对于git不是很熟悉的同学，比如在下，这简直噩梦。时间紧迫，直接跑一下以下命令，然后就可以继续愉快地使用<code>git add/commit</code>了。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">rm -rf themes/xxx/.git</div></pre></td></tr></table></figure>
-<h2 id="使用评论插件"><a href="#使用评论插件" class="headerlink" title="使用评论插件"></a>使用评论插件</h2><p>我使用的主题集成<a href="http://duoshuo.com/" target="_blank" rel="external">多说</a>，按照主题文档指导，要启用的话需要一个<strong><em>shortname</em>。妈蛋翻遍多说官网，没找到哪里有</strong>shortname**。Google了一下，看到一些问答，说是先建站，然后有个二级域名，二级域名第一个单词啥的。但死活没人给出建站地址，尼玛官网上居然也找不到。不知道翻了多少问答，终于在一个问答的回复的链接中找到了建站链接，真尼玛坑啊。对，就下面这东西，就是它！！！</p>
-<p style="font-size: 36px;text-align:center">多说建站链接：<a href="http://duoshuo.com/create-site/" target="_blank" rel="external">http://duoshuo.com/create-site/</a></p>
-
+                <p>前后端分离的开发实践中，mock是一个非常重要的工具。由于前后端开发很难做到同步，前端需要对未完成的接口的响应进行mock；而后端在前端没有完成的情况下，需要构造请求，测试接口的正确性。本文对现有的接口mock工具做了调研，分析其优劣，在最后给出了mock平台的功能设想。</p>
+<h2 id="现有的解决方案"><a href="#现有的解决方案" class="headerlink" title="现有的解决方案"></a>现有的解决方案</h2><p>对github上七个比较流行的前端mock工具做了调研，从工具的接入方式、接口的配置、mock数据的构造、mock数据的管理、支持的数据类型、真实响应的模拟等方面对其进行了分析总结。</p>
+<h3 id="Jquery-mockjax"><a href="#Jquery-mockjax" class="headerlink" title="Jquery-mockjax"></a><a href="https://github.com/jakerella/jquery-mockjax" target="_blank" rel="external">Jquery-mockjax</a></h3><h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><ol>
+<li><p>接入方式：拦截jquery api发出的ajax请求</p>
+</li>
+<li><p>接口的配置<br> 通过接口<code>$.mockjax(/* Object */ options)</code>配置请求与mock数据的映射，支持的请求配置方式有：</p>
+<ul>
+<li><p>通配符</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.mockjax(&#123;url: &quot;/data/*&quot;&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>正则匹配</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.mockjax(&#123;url: /^\/data\/(quote|tweet)$/i&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$.mockjax(&#123;url: &quot;/data/1&quot;&#125;)</div></pre></td></tr></table></figure>
+</li>
+<li><p>根据请求参数动态生成mock配置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// 通过参数settings可以获取请求url、headers等</div><div class="line">$.mockjax(function(settings)&#123;&#125;)</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>mock响应数据的构造方式</p>
+<p> mockjax的所有响应数据需要通过以下三种方式指定，数据需要手工创建。</p>
+<ul>
+<li>通过<code>mockjax</code>接口的参数<code>responseText/responseXML</code>指定</li>
+<li>通过参数<code>proxy</code>定向到json文件</li>
+<li>通过参数<code>response</code>，动态构造或指定数据</li>
+</ul>
+</li>
+<li><p>mock数据管理</p>
+<ul>
+<li>写死在mock配置中</li>
+<li>通过json文件组织，通过参数proxy被使用</li>
+</ul>
+</li>
+<li><p>支持的数据类型：text, html, json, jsonp, script, xml</p>
+</li>
+<li><p>真实响应的模拟</p>
+<ul>
+<li>模拟网络延时</li>
+<li>指定响应码</li>
+<li>指定响应头、支持自定义响应头</li>
+<li>模拟服务端超时</li>
+</ul>
+</li>
+<li><p>其他功能</p>
+<ul>
+<li>通过接口<code>$.mockjaxSetting</code>全局配置</li>
+<li>响应完成后的钩子</li>
+<li>移除指定mock配置</li>
+</ul>
+</li>
+</ol>
+<h4 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h4><pre><code>1. 支持几乎所有的主流浏览器
+2. 支持的数据类型较多
+3. 可以根据请求参数动态生成不同的响应
+4. 配置简单，容易上手
+5. 支持自定义响应头
+6. 提供`onAfter{Cxxx}`钩子
+</code></pre><h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><pre><code>1. 所有的mock数据都要手工创建
+2. 必须与jquery结合使用，使用场景受到严重限制
+3. mock相关的代码侵入项目代码，需要在打包时移除
+</code></pre><h3 id="Pretender"><a href="#Pretender" class="headerlink" title="Pretender"></a><a href="https://github.com/trek/pretender" target="_blank" rel="external">Pretender</a></h3><h4 id="功能-1"><a href="#功能-1" class="headerlink" title="功能"></a>功能</h4><ol>
+<li><p>接入方式</p>
+<p> 替换<code>XMLHttpRequest</code>对象，拦截所有请求，定向到预定义的pretend服务</p>
+</li>
+<li><p>接口的配置<br> 通过方法<code>get</code>, <code>put</code>, <code>post</code>, <code>delete</code>, <code>patch</code>, <code>head</code>配置path与响应的对应关系，path支持以下两种形式：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">this.get(&apos;/api/songs/12&apos;, function (request) &#123;&#125;);</div><div class="line"></div><div class="line">this.get(&apos;/api/songs/:song_id&apos;, function (request) &#123;&#125;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>mock响应数据的构造方式</p>
+<p> 通过回调指定，响应数据需要手工创建。</p>
+</li>
+<li><p>mock数据管理：硬编码到代码里。</p>
+</li>
+<li><p>支持的数据类型：json, text, html</p>
+</li>
+<li><p>其他功能</p>
+<ul>
+<li>提供mock响应完成后钩子</li>
+<li>支持响应回调中获取query参数</li>
+<li>记录处理和未处理的请求数</li>
+</ul>
+</li>
+</ol>
+<h4 id="优点-1"><a href="#优点-1" class="headerlink" title="优点"></a>优点</h4><pre><code>1. 不依赖项目所使用的js库
+2. 配置简单，容易上手
+</code></pre><h4 id="缺点-1"><a href="#缺点-1" class="headerlink" title="缺点"></a>缺点</h4><pre><code>1. path配置比较麻烦，不支持正则和通配符
+2. 没有提供从文件获取mock数据的支持
+3. 不能模拟异常响应，不能模拟真实网络环境
+</code></pre><h3 id="Mockjs"><a href="#Mockjs" class="headerlink" title="Mockjs"></a><a href="https://github.com/nuysoft/Mock" target="_blank" rel="external">Mockjs</a></h3><h4 id="功能-2"><a href="#功能-2" class="headerlink" title="功能"></a>功能</h4><ol>
+<li>接入方式：拦截ajax请求，内置支持jQuery, Zepto, KISSY。</li>
+<li>接口的配置：url字符串或正则表达式，请求类型</li>
+<li><p>mock响应数据的构造方式</p>
+<ul>
+<li>根据html模板生成模拟数据</li>
+<li>根据数据模板生成自动生成模拟数据</li>
+</ul>
+</li>
+<li><p>mock数据管理</p>
+<p> mock数据根据数据模板动态生成，需要管理数据模板。</p>
+</li>
+<li><p>支持的数据类型：json, text, html</p>
+</li>
+</ol>
+<h4 id="优点-2"><a href="#优点-2" class="headerlink" title="优点"></a>优点</h4><pre><code>1. 给出了数据模板定义、数据占位符定义，提供了丰富的语义化的模拟数据生成器
+2. 只需定义一份数据模板，即可批量生成模拟数据
+</code></pre><h4 id="缺点-2"><a href="#缺点-2" class="headerlink" title="缺点"></a>缺点</h4><pre><code>1. 数据模板定义没有复用机制
+2. mock请求、响应配置功能简陋
+3. 不支持真实网络环境的模拟
+4. 不支持异常响应的模拟
+</code></pre><h3 id="APItizer"><a href="#APItizer" class="headerlink" title="APItizer"></a><a href="https://github.com/retro/apitizer" target="_blank" rel="external">APItizer</a></h3><h4 id="功能-3"><a href="#功能-3" class="headerlink" title="功能"></a>功能</h4><ol>
+<li>接入方式：拦截ajax请求</li>
+<li><p>接口的配置</p>
+<ul>
+<li>调用<code>apitizer.addSchema(&#39;schemaName&#39;, schema)</code>时，apitizer会自动生成restful风格api的mock配置。</li>
+<li>可通过<code>apitizer.fixture(&#39;MOTHOD /URL&#39;, function(params) {})</code>进行配置</li>
+</ul>
+</li>
+<li><p>mock响应数据的构造方式</p>
+<ul>
+<li>根据预定义的json schema生成json数据</li>
+<li>可以定制数据生成规则，覆盖默认的生成规则</li>
+<li>可以通过回调，响应其他途径获取的数据</li>
+</ul>
+</li>
+<li><p>mock数据管理</p>
+<ul>
+<li>addSchema后，调用schemaStore(‘schemaName’, number)会自动生成指定条目的<br>数据存入数据库，默认使用数据库中存储的作为mock数据。</li>
+<li>可以响应随机生成的mock数据</li>
+</ul>
+</li>
+<li><p>支持的数据类型：json</p>
+</li>
+<li><p>真实响应的模拟</p>
+<ul>
+<li>模拟响应延迟</li>
+<li>模拟表单更新</li>
+<li>模拟列表排序、搜索</li>
+<li>模拟异常响应</li>
+</ul>
+</li>
+<li><p>其他功能</p>
+<ul>
+<li>使用json schema验证后端接口的正确性</li>
+<li>支持json schema通过<code>$ref</code>复用</li>
+</ul>
+</li>
+</ol>
+<h4 id="优点-3"><a href="#优点-3" class="headerlink" title="优点"></a>优点</h4><pre><code>1. 使用json schema自动生成数据，不需要手工创建
+2. 支持schema的复用
+3. 能够mock表单修改、列表排序和搜索
+4. 可以mock随机数据，也可以mock固定数据
+5. 对restful api提供原生支持
+</code></pre><h4 id="缺点-3"><a href="#缺点-3" class="headerlink" title="缺点"></a>缺点</h4><pre><code>1. 未提供有效的json schema管理方式
+2. 对于非restful风格的api支持不是很好
+3. 依赖jquery
+</code></pre><h3 id="RAP"><a href="#RAP" class="headerlink" title="RAP"></a><a href="https://github.com/thx/RAP" target="_blank" rel="external">RAP</a></h3><h3 id="功能-4"><a href="#功能-4" class="headerlink" title="功能"></a>功能</h3><ol>
+<li><p>接入方式</p>
+<p> 通过rap插件拦截ajax请求，支持KISSY、jquery, 将以下代码写在KISSY或jQuery js代码之后即可:</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;http://&#123;&#123;domainName&#125;&#125;/rap.plugin.js?projectId=&#123;&#123;projectId&#125;&#125;&amp;mode=&#123;&#123;mode&#125;&#125;&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p> 其中：</p>
+<ul>
+<li>为用户所编辑的接口在RAP中的项目ID</li>
+<li><p>为RAP路由的工作模式, 默认值为3。</p>
+<p>mode不同值的具体含义如下:</p>
+</li>
+<li><p>0 不拦截</p>
+</li>
+<li>1 拦截全部</li>
+<li>2 黑名单中的项不拦截</li>
+<li>3 仅拦截白名单中的项</li>
+</ul>
+</li>
+<li><p>接口的配置</p>
+<ul>
+<li>根据接口定义自动生成mock服务</li>
+<li>支持黑名单、白名单配置</li>
+</ul>
+</li>
+<li><p>mock响应数据的构造方式</p>
+<ul>
+<li>根据接口中定义的数据模板自动生成模拟数据</li>
+</ul>
+</li>
+<li><p>mock数据管理</p>
+<ul>
+<li>接口定义时存储数据模板，不存储具体数据</li>
+</ul>
+</li>
+<li><p>支持的数据类型：json</p>
+</li>
+<li><p>其他功能</p>
+<ul>
+<li>提供按项目管理接口的功能</li>
+<li>提供接口版本管理的功能</li>
+<li>根据接口定义申城接口文档</li>
+<li>根据接口定义生成接口的json schema详情</li>
+<li>提供多项目见mock模板的复用</li>
+<li>支持restful api</li>
+</ul>
+</li>
+</ol>
+<h4 id="优点-4"><a href="#优点-4" class="headerlink" title="优点"></a>优点</h4><pre><code>1. 根据接口定义自动生成mock服务
+2. 根据接口定义中的数据模板自动生成mock数据
+3. 由于mock数据是根据接口定义自动生成的，当接口变化时，不需要考虑mock数据修改的问题
+4. 黑白名单功能便于在真实后端与mock服务之间切换
+</code></pre><h4 id="缺点-4"><a href="#缺点-4" class="headerlink" title="缺点"></a>缺点</h4><pre><code>1. 功能复杂，需要一定的学习成本
+2. 只能mock随机数据
+3. 接口定义和数据模板复用度低
+</code></pre><h3 id="Mocky"><a href="#Mocky" class="headerlink" title="Mocky"></a><a href="https://github.com/studiodev/Mocky" target="_blank" rel="external">Mocky</a></h3><p>待添加</p>
+<h3 id="Mockable"><a href="#Mockable" class="headerlink" title="Mockable"></a><a href="">Mockable</a></h3><p>待添加</p>
+<h2 id="理想中的mock平台"><a href="#理想中的mock平台" class="headerlink" title="理想中的mock平台"></a>理想中的mock平台</h2><pre><code>1. mock服务能够灵活配置，后端与mock服务之间能够无缝结合，快速切换
+2. 数据自动生成，可以是随机数据，也可以是固定数据，并且提供便利的切换方式
+3. 当请求参数异常时，能够返回正确的异常信息
+4. 当接口发生变化时，不需要修改原有的mock数据
+5. 能够mock反例数据，便于自测
+</code></pre>
             </div>
         </div>
     </div>
@@ -246,7 +457,7 @@
         <div class="card">
             <div class="card-content">
                 <!--PC版-->
-                <div id="SOHUCS" sid="2016/06/25/hello-blog/"></div>
+                <div id="SOHUCS" sid="2014/11/24/mock-investigate/"></div>
                 <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
                 <script type="text/javascript">
                 window.changyan.api.config({

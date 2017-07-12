@@ -86,11 +86,11 @@
         <li class="side-user">
             <div class="row">
                 <div class="col s4 no-padding">
-                    <img class="avatar-image circle responsive-img" src="http://ww2.sinaimg.cn/small/74990035jw1f1rjkd681bj20rs0rsdhg.jpg" alt="User Avatar">
+                    <img class="avatar-image circle responsive-img" src="https://ww2.sinaimg.cn/small/74990035jw1f1rjkd681bj20rs0rsdhg.jpg" alt="User Avatar">
                 </div>
                 <div class="info col s8 valign-wrapper no-padding">
                     <div class="valign">
-                        <p class="name">杨华北</p>
+                        <p class="name">Hiby</p>
                         <p class="desc">Web前端</p>
                     </div>
                 </div>
@@ -137,6 +137,14 @@
     
 
             
+
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/开发/">
+                    开发 <span class="right">3 篇</span></a>
+                </a>
+            </li>
+
+        
 
             <li class="collapse-level-0" collapse-level="0">
                 <a class="no-padding" href="/categories/shit/">
@@ -345,26 +353,15 @@
     <section id="comment">
         <div class="card">
             <div class="card-content">
-                <!-- Duoshuo Comment BEGIN -->
-                <div class="ds-thread" data-thread-key="reading/index.html" data-title="读书" data-url="http://hiby.xyz/reading/index.html"></div>
-
+                <!--PC版-->
+                <div id="SOHUCS" sid="reading/index.html"></div>
+                <script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
                 <script type="text/javascript">
-                    console.log(document.querySelector('.ds-thread'));
-                    var duoshuoQuery = {
-                        short_name: 'hiby'
-                    };
-                    (function() {
-                        var ds = document.createElement('script');
-                        ds.type = 'text/javascript';
-                        ds.async = true;
-                        ds.src = (document.location.protocol == 'https:'
-                            ? 'https:'
-                            : 'http:') + '//static.duoshuo.com/embed.js';
-                        ds.charset = 'UTF-8';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-                    })();
+                window.changyan.api.config({
+                appid: 'cysJNWvbu',
+                conf: 'prod_bc57cc28d4c38cfffbe628c24ee89333'
+                });
                 </script>
-                <!-- Duoshuo Comment END -->
             </div>
         </div>
     </section>
@@ -392,7 +389,7 @@
             <div class="social-group col m3 s12">
                 <h5 class="white-text">社交</h5>
                 
-                    <a class="social-link" href="http://weibo.com/yanghuabei" target="_blank">
+                    <a class="social-link" href="https://weibo.com/yanghuabei" target="_blank">
                         <i class="fa fa-2x fa-weibo"></i>
                     </a>
                 
@@ -419,7 +416,7 @@
 
     <div class="footer-copyright cyan-link-context">
         <div class="container">
-            © 2016 habel.cn, All rights reserved.
+            © 2016 hiby.xyz, All rights reserved.
             <p class="right" style="margin-top: 0;">本博客由 <a href="https://hexo.io">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
         </div>
     </div>
@@ -636,6 +633,15 @@
     ga('send', 'pageview');
 
 </script>
+// <script>
+// var _hmt = _hmt || [];
+// (function() {
+//     var hm = document.createElement("script");
+//     hm.src = "https://hm.baidu.com/hm.js?0f87f5aa6b65e8b0755712333e76ed76";
+//     var s = document.getElementsByTagName("script")[0]; 
+//     s.parentNode.insertBefore(hm, s);
+// })();
+// </script>
 
 
 
